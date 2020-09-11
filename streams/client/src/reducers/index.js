@@ -1,5 +1,8 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
+import { reducer as formReducer } from "redux-form";
+import authReducer from "./authReducer";
 
 export default combineReducers({
-    replaceMe: () => '1l;kjasd'
+  auth: authReducer,
+  form: formReducer,
 });
